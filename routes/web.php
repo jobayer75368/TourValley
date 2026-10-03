@@ -9,3 +9,6 @@ Route::get('/', function () {
 Route::get('/about', function () {
     return view('frontend.about');
 })->name('about');
+Route::get('/packages', function () {
+    return view('frontend.packages');
+})->name('packages');
