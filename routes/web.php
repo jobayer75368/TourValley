@@ -18,3 +18,6 @@ Route::get('/destination', function () {
 Route::get('/contact', function () {
     return view('frontend.contact');
 })->name('contact');
+Route::get('/guides', function () {
+    return view('frontend.guides');
+})->name('guides');
