@@ -15,3 +15,6 @@ Route::get('/packages', function () {
 Route::get('/destination', function () {
     return view('frontend.destination');
 })->name('destination');
+Route::get('/contact', function () {
+    return view('frontend.contact');
+})->name('contact');
