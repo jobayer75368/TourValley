@@ -12,3 +12,6 @@ Route::get('/about', function () {
 Route::get('/packages', function () {
     return view('frontend.packages');
 })->name('packages');
+Route::get('/destination', function () {
+    return view('frontend.destination');
+})->name('destination');
