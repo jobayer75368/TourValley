@@ -10,20 +10,17 @@
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav ms-auto py-0">
             <a href="{{ route('home') }}" class="nav-item nav-link active">Home</a>
-            <a href="{{ route('about') }}" class="nav-item nav-link">About</a>
-            <a href="services.html" class="nav-item nav-link">Services</a>
+            <a href="{{ route('destination') }}" class="nav-item nav-link">Destination</a>
             <a href="{{ route('packages') }}" class="nav-item nav-link">Packages</a>
-            <a href="blog.html" class="nav-item nav-link">Blog</a>
+            <a href="{{ route('about') }}" class="nav-item nav-link">About</a>
+            <a href="{{route('contact')}}" class="nav-item nav-link">Contact</a>
             <div class="nav-item dropdown">
                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                 <div class="dropdown-menu m-0">
-                    <a href="{{ route('destination') }}" class=" dropdown-item">Destination</a>
-                    <a href="tour.html" class="dropdown-item">Explore Tour</a>
                     <a href="booking.html" class="dropdown-item">Travel Booking</a>
                     <a href="404.html" class="dropdown-item">404 Page</a>
                 </div>
             </div>
-            <a href="{{route('contact')}}" class="nav-item nav-link">Contact</a>
         </div>
         <a href="" class="btn btn-primary rounded-pill py-2 px-4 ms-lg-4">Book Now</a>
     </div>
