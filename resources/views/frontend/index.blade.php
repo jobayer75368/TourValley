@@ -12,7 +12,7 @@
             </ol>
             <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active">
-                    <img src="{{ asset('frontend/assets/img/carousel/carousel-2.jpg') }}" class="img-fluid" alt="Image">
+                    <img src="{{ asset('frontend/assets/breadcumb/homepage_cover.jpg') }}" class="img-fluid" alt="Image">
                     <div class="carousel-caption">
                         <div class="p-3" style="max-width: 900px;">
                             <h4 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;">Explore The World</h4>
@@ -41,11 +41,11 @@
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon btn bg-primary" aria-hidden="false"></span>
+                <span class="carousel-control-prev-icon btn package_footer" aria-hidden="false"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
-                <span class="carousel-control-next-icon btn bg-primary" aria-hidden="false"></span>
+                <span class="carousel-control-next-icon btn package_footer" aria-hidden="false"></span>
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
@@ -746,15 +746,15 @@
                         <h5 class="mb-0">Venice - Italy</h5>
                         <small class="text-uppercase">Hotel Deals</small>
                         <div class="mb-3">
-                            <small class="fa fa-star text-primary"></small>
-                            <small class="fa fa-star text-primary"></small>
-                            <small class="fa fa-star text-primary"></small>
-                            <small class="fa fa-star text-primary"></small>
-                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star"></small>
+                            <small class="fa fa-star"></small>
+                            <small class="fa fa-star"></small>
+                            <small class="fa fa-star"></small>
+                            <small class="fa fa-star"></small>
                         </div>
                         <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt nemo quia quae illum aperiam fugiat voluptatem repellat</p>
                     </div>
-                    <div class="row bg-primary rounded-bottom mx-0">
+                    <div class="package_footer row rounded-bottom mx-0">
                         <div class="col-6 text-start px-0">
                             <a href="#" class="btn-hover btn text-white py-2 px-4">Read More</a>
                         </div>
@@ -779,15 +779,15 @@
                         <h5 class="mb-0">The New California</h5>
                         <small class="text-uppercase">Hotel Deals</small>
                         <div class="mb-3">
-                            <small class="fa fa-star text-primary"></small>
-                            <small class="fa fa-star text-primary"></small>
-                            <small class="fa fa-star text-primary"></small>
-                            <small class="fa fa-star text-primary"></small>
-                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star"></small>
+                            <small class="fa fa-star"></small>
+                            <small class="fa fa-star"></small>
+                            <small class="fa fa-star"></small>
+                            <small class="fa fa-star"></small>
                         </div>
                         <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt nemo quia quae illum aperiam fugiat voluptatem repellat</p>
                     </div>
-                    <div class="row bg-primary rounded-bottom mx-0">
+                    <div class="package_footer row rounded-bottom mx-0">
                         <div class="col-6 text-start px-0">
                             <a href="#" class="btn-hover btn text-white py-2 px-4">Read More</a>
                         </div>
@@ -812,15 +812,15 @@
                         <h5 class="mb-0">Discover Japan</h5>
                         <small class="text-uppercase">Hotel Deals</small>
                         <div class="mb-3">
-                            <small class="fa fa-star text-primary"></small>
-                            <small class="fa fa-star text-primary"></small>
-                            <small class="fa fa-star text-primary"></small>
-                            <small class="fa fa-star text-primary"></small>
-                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star"></small>
+                            <small class="fa fa-star"></small>
+                            <small class="fa fa-star"></small>
+                            <small class="fa fa-star"></small>
+                            <small class="fa fa-star"></small>
                         </div>
                         <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt nemo quia quae illum aperiam fugiat voluptatem repellat</p>
                     </div>
-                    <div class="row bg-primary rounded-bottom mx-0">
+                    <div class="package_footer row rounded-bottom mx-0">
                         <div class="col-6 text-start px-0">
                             <a href="#" class="btn-hover btn text-white py-2 px-4">Read More</a>
                         </div>
@@ -845,15 +845,15 @@
                         <h5 class="mb-0">Thayland Trip</h5>
                         <small class="text-uppercase">Hotel Deals</small>
                         <div class="mb-3">
-                            <small class="fa fa-star text-primary"></small>
-                            <small class="fa fa-star text-primary"></small>
-                            <small class="fa fa-star text-primary"></small>
-                            <small class="fa fa-star text-primary"></small>
-                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star"></small>
+                            <small class="fa fa-star"></small>
+                            <small class="fa fa-star"></small>
+                            <small class="fa fa-star"></small>
+                            <small class="fa fa-star"></small>
                         </div>
                         <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt nemo quia quae illum aperiam fugiat voluptatem repellat</p>
                     </div>
-                    <div class="row bg-primary rounded-bottom mx-0">
+                    <div class="package_footer row rounded-bottom mx-0">
                         <div class="col-6 text-start px-0">
                             <a href="#" class="btn-hover btn text-white py-2 px-4">Read More</a>
                         </div>
@@ -1467,11 +1467,11 @@
                     <h5 class="mb-0">John Abraham</h5>
                     <p class="mb-0">New York, USA</p>
                     <div class="d-flex justify-content-center">
-                        <i class="fas fa-star text-primary"></i>
-                        <i class="fas fa-star text-primary"></i>
-                        <i class="fas fa-star text-primary"></i>
-                        <i class="fas fa-star text-primary"></i>
-                        <i class="fas fa-star text-primary"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
                     </div>
                 </div>
             </div>
@@ -1487,11 +1487,11 @@
                     <h5 class="mb-0">John Abraham</h5>
                     <p class="mb-0">New York, USA</p>
                     <div class="d-flex justify-content-center">
-                        <i class="fas fa-star text-primary"></i>
-                        <i class="fas fa-star text-primary"></i>
-                        <i class="fas fa-star text-primary"></i>
-                        <i class="fas fa-star text-primary"></i>
-                        <i class="fas fa-star text-primary"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
                     </div>
                 </div>
             </div>
@@ -1507,11 +1507,11 @@
                     <h5 class="mb-0">John Abraham</h5>
                     <p class="mb-0">New York, USA</p>
                     <div class="d-flex justify-content-center">
-                        <i class="fas fa-star text-primary"></i>
-                        <i class="fas fa-star text-primary"></i>
-                        <i class="fas fa-star text-primary"></i>
-                        <i class="fas fa-star text-primary"></i>
-                        <i class="fas fa-star text-primary"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
                     </div>
                 </div>
             </div>
@@ -1527,11 +1527,11 @@
                     <h5 class="mb-0">John Abraham</h5>
                     <p class="mb-0">New York, USA</p>
                     <div class="d-flex justify-content-center">
-                        <i class="fas fa-star text-primary"></i>
-                        <i class="fas fa-star text-primary"></i>
-                        <i class="fas fa-star text-primary"></i>
-                        <i class="fas fa-star text-primary"></i>
-                        <i class="fas fa-star text-primary"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
                     </div>
                 </div>
             </div>

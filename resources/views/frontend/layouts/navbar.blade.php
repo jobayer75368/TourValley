@@ -20,9 +20,6 @@
                     <a href="{{ route('destination') }}" class=" dropdown-item">Destination</a>
                     <a href="tour.html" class="dropdown-item">Explore Tour</a>
                     <a href="booking.html" class="dropdown-item">Travel Booking</a>
-                    <a href="gallery.html" class="dropdown-item">Our Gallery</a>
-                    <a href="{{route('guides')}}" class="dropdown-item">Travel Guides</a>
-                    <a href="testimonial.html" class="dropdown-item">Testimonial</a>
                     <a href="404.html" class="dropdown-item">404 Page</a>
                 </div>
             </div>
