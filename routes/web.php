@@ -27,3 +27,7 @@ Route::get('/package_details', function () {
 Route::get('/booking', function () {
     return view('frontend.booking');
 })->name('booking');
+// dashboard 
+Route::get('/customer_dashboard', function () {
+    return view('frontend.dashboard');
+})->name('customer_dashboard');

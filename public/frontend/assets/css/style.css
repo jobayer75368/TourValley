@@ -1382,3 +1382,53 @@
         font-size: 14px;
         margin-right: 8px;
     }
+
+/*** Customer Dashboard Start ***/
+
+/* Sidebar links */
+.customer-dashboard .cd-link {
+    transition: 0.5s;
+}
+
+.customer-dashboard .cd-link i {
+    width: 20px;
+    transition: 0.5s;
+}
+
+.customer-dashboard .cd-link:hover,
+.customer-dashboard .cd-link.active {
+    background: var(--bs-primary);
+    color: var(--bs-white) !important;
+}
+
+.customer-dashboard .cd-link:hover i,
+.customer-dashboard .cd-link.active i {
+    color: var(--bs-white) !important;
+}
+
+.customer-dashboard .cd-link.cd-logout:hover {
+    background: var(--bs-danger);
+}
+
+/* Stat cards */
+.customer-dashboard .cd-stat,
+.customer-dashboard .cd-stat-icon {
+    transition: 0.5s;
+}
+
+.customer-dashboard .cd-stat:hover {
+    background: var(--bs-primary) !important;
+    color: var(--bs-white);
+}
+
+.customer-dashboard .cd-stat:hover .cd-stat-icon {
+    background: var(--bs-white) !important;
+    color: var(--bs-primary) !important;
+}
+
+/* Table cells keep the grey box background */
+.customer-dashboard .cd-table > :not(caption) > * > * {
+    background: transparent;
+}
+
+/*** Customer Dashboard End ***/
