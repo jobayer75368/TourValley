@@ -21,3 +21,6 @@ Route::get('/contact', function () {
 Route::get('/guides', function () {
     return view('frontend.guides');
 })->name('guides');
+Route::get('/package_details', function () {
+    return view('frontend.package_details');
+})->name('package_details');

@@ -18,6 +18,7 @@
                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                 <div class="dropdown-menu m-0">
                     <a href="booking.html" class="dropdown-item">Travel Booking</a>
+                    <a href="{{route('package_details')}}" class="dropdown-item">Package Details</a>
                     <a href="404.html" class="dropdown-item">404 Page</a>
                 </div>
             </div>
