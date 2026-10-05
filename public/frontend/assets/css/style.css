@@ -131,8 +131,8 @@
 
 .topbar {
     padding: 2px 10px 2px 20px;
-    /* background: var(--bs-primary) !important; */
-    background-color: #032A3F;
+    background: var(--bs-primary) !important;
+    /* background-color: #032A3F; */
 }
 
 .topbar a,
@@ -155,11 +155,12 @@
 
 
 /*** Navbar ***/
+
 .navbar-light .navbar-nav .nav-link {
     font-family: 'Roboto', sans-serif;
     position: relative;
     padding: 35px 15px;
-    color: var(--bs-white) !important;
+    color: var(--bs-dark) !important;
     font-size: 17px;
     font-weight: 400;
     outline: none;
@@ -289,7 +290,7 @@
         bottom: -1px;
         left: 0;
         background: var(--bs-primary);
-        transition: .5s;
+        transition: .3s;
         z-index: -1;
     }
 
@@ -304,99 +305,46 @@
     }
 }
 
-/*** Carousel Hero Header Start ***/
-.carousel-header .carousel-control-prev,
-.carousel-header .carousel-control-next {
-    background: transparent;
-}
-
-.carousel-header .carousel-control-prev .carousel-control-prev-icon {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    padding: 25px 30px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 50px;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 50px;
-    background-size: 60% 60%;
-}
-
-.carousel-header .carousel-control-next .carousel-control-next-icon {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    padding: 25px 30px;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 0;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 0;
-    background-size: 60% 60%;
-
-}
-
-.carousel-header .carousel .carousel-indicators li,
-.carousel-header .carousel .carousel-indicators li,
-.carousel-header .carousel .carousel-indicators li {
-    opacity: 0;
-}
-
-.carousel-header .carousel-inner .carousel-item {
+/*** Hero Header Start ***/
+.hero-header {
     position: relative;
-    min-height: 100vh 
+    min-height: 100vh;
+    clip-path: inset(0); /* keeps the fixed image visible only inside the hero */
 }
 
-.carousel-header .carousel-inner .carousel-item img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.carousel-header .carousel-inner .carousel-item .carousel-caption  {
-    position: absolute;
-    width: 100%;
-    height: 100%;
+.hero-header::before {
+    content: "";
+    position: fixed;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 100vh;
+    background: var(--hero-img) center center / cover no-repeat;
+}
+
+.hero-header .hero-overlay {
+    position: relative;
+    min-height: 100vh;
     padding-top: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, 0.5));
-    background-size: cover;
+    background: rgba(0, 0, 0, .3);
 }
 
 @media (max-width: 768px) {
-    .carousel-header .carousel-inner .carousel-item img,
-    .carousel-header .carousel-inner .carousel-item .carousel-caption {
-        height: 700px;
-        margin-top: -100px;
-    }
-
-    .carousel-header {
-        height: 700px !important;
-    }
-
-    .carousel-header .carousel-control-prev .carousel-control-prev-icon,
-    .carousel-header .carousel-control-next .carousel-control-next-icon {
-        opacity: 0;
-    }
-    
     .search-bar {
         margin-top: -100px;
         transition: 0.5s;
     }
 }
-/*** Carousel Hero Header End ***/
+/*** Hero Header End ***/
 
 
 /*** Single Page Hero Header Start ***/
 .bg-breadcrumb {
-    background: linear-gradient(rgba(19, 53, 123, 0.5), rgba(19, 53, 123, 0.5)), url(../img/breadcrumb-bg.jpg);
+    background: linear-gradient(rgba(19, 53, 123, 0.5), rgba(19, 53, 123, 0.5)), url(../breadcumb/7462.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1196,6 +1144,7 @@
 /*** Subscribe Start ***/
 .subscribe {
     background: linear-gradient(rgba(19, 53, 123, .6), rgba(19, 53, 123, .6)), url(../img/subscribe-img.jpg);
+    background: linear-gradient(rgba(19, 53, 123, .6), rgba(19, 53, 123, .6)), url(../breadcumb/ariful-hoque-UYwFnVLPgWM-unsplash.jpg);
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
