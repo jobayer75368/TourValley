@@ -24,3 +24,6 @@ Route::get('/guides', function () {
 Route::get('/package_details', function () {
     return view('frontend.package_details');
 })->name('package_details');
+Route::get('/booking', function () {
+    return view('frontend.booking');
+})->name('booking');

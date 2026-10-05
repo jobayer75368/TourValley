@@ -1315,3 +1315,70 @@
     .package-details .pd-review+.pd-review {
         margin-top: 18px;
     }
+
+    /* booking page */
+    .booking-page .bk-box {
+        background: var(--bs-light);
+        border-radius: 10px;
+        padding: 25px;
+    }
+
+    .booking-page .bk-cover {
+        width: 100%;
+        height: 230px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .booking-page .bk-row {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 8px 0;
+        border-bottom: 1px dashed rgba(0, 0, 0, .12);
+    }
+
+    .booking-page .bk-row:last-child {
+        border-bottom: 0;
+    }
+
+    .booking-page .bk-total {
+        background: var(--bs-primary);
+        color: var(--bs-white);
+        border-radius: 10px;
+        padding: 18px 22px;
+    }
+
+    .booking-page .bk-total .bk-total-amount {
+        font-size: 28px;
+        font-weight: 600;
+    }
+
+    .booking-page .traveler-card {
+        background: var(--bs-light);
+        border-left: 3px solid var(--bs-primary);
+        border-radius: 10px;
+        padding: 18px;
+    }
+
+    .booking-page .traveler-card+.traveler-card {
+        margin-top: 14px;
+    }
+
+    .booking-page .bk-step {
+        font-weight: 600;
+        margin: 28px 0 14px;
+    }
+
+    .booking-page .bk-step span {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        background: var(--bs-primary);
+        color: var(--bs-white);
+        font-size: 14px;
+        margin-right: 8px;
+    }
