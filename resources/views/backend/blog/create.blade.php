@@ -1,0 +1,118 @@
+@extends('backend.admin_master')
+@section('admin_content')
+<main class="dashboard-content">
+    <div class="container-fluid px-3 px-lg-4 py-4">
+        <div class="page-heading">
+            <div class="page-heading-copy">
+                <span class="page-icon">
+                    <i class="bi bi-tools"></i>
+                </span>
+                <div>
+                    <h1 class="h3 mb-1">Blog Management</h1>
+                </div>
+            </div>
+            <div>
+                <ul class="list-unstyled d-flex gap-1">
+                    <li>
+                        <a class="link-opacity-25-hover" href="{{ route('admin.dashboard') }}">Dashboard </a>
+                    </li>/
+                    <li>
+                        <a class="link-opacity-25-hover" href="{{ route('admin.blog.index') }}">Blog List</a>
+                    </li>/
+                    <li>Create Blog</li>
+                </ul>
+            </div>
+        </div>
+
+        <section class="row g-3">
+            <div class="col-12 col-xl-12">
+                <form action="{{ route('admin.blog.store') }}" class="panel needs-validation" method="POST" enctype="multipart/form-data" novalidate>
+                    @csrf
+                    <div class="panel-header">
+                        <div>
+                            <h2 class="h5 mb-1 section-title">
+                                <i class="bi bi-tools"></i>
+                                <span>Create blog</span>
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label class="form-label" for="blogTitle">Title</label>
+                            <input class="form-control" id="blogTitle" type="text" name="blog_title" required>
+                            <div class="invalid-feedback">Title is required.</div>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label" for="blogSlug">Slug</label>
+                            <input class="form-control" id="blogSlug" type="text" name="blog_slug" required>
+                            <div class="invalid-feedback">Blog Slug is required.</div>
+                        </div>
+
+                        <div class="col-12">
+
+                            <label class="form-label" for="shortDescription">Short Description</label>
+
+                            <textarea class="form-control summernote" id="shortDescription" rows="5" name="short_description"></textarea>
+
+                        </div>
+
+                        <div class="col-12">
+                            <label class="form-label" for="longDescription">Long Description</label>
+                            <textarea class="form-control summernote" id="longDescription" rows="5" name="long_description"></textarea>
+                        </div>
+
+
+                        <div class="col-12">
+
+                            <label class="form-label" for="status">Status</label>
+                            <select class="form-control" name="status" id="status">
+                                <option value="draft">Draft</option>
+                                <option value="pending">pending</option>
+                                <option value="published">Published</option>
+                            </select>
+
+                        </div>
+
+                        <div class="col-12">
+                            <label class="form-label" for="blogImg">Image</label>
+                            <input class="form-control" id="blogImg" type="file" name="blog_image">
+                            <div class="invalid-feedback">Blog Image is required.</div>
+                            <div class="mt-2">
+                                <img id="blogImagePreview" src="" alt="" style="height:200px; display:none;">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="d-flex justify-start mt-4">
+                        <button class="btn btn-primary" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+
+
+
+        </section>
+    </div>
+</main>
+
+<!-- image maximum size check  -->
+<script>
+    document.getElementById('blogImg').addEventListener('change', function() {
+        const maxSize = 1.5 * 1024 * 1024; // 4 MB
+        const error = this.parentElement.querySelector('.text-danger');
+
+        if (this.files[0] && this.files[0].size > maxSize) {
+            this.value = '';
+
+            if (error) {
+                error.textContent = 'Image size must not be larger than 1.5 MB.';
+            } else {
+                this.insertAdjacentHTML(
+                    'afterend',
+                    '<span class="text-danger">Image size must not be larger than 1.5 MB.</span>'
+                );
+            }
+        }
+    });
+</script>
+@endsection

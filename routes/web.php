@@ -31,3 +31,10 @@ Route::get('/booking', function () {
 Route::get('/customer_dashboard', function () {
     return view('frontend.dashboard');
 })->name('customer_dashboard');
+
+
+// Backend starts here 
+
+Route::get('/admin/dashboard', function () {
+    return view('backend.dashboard');
+})->name('admin.dashboard');
