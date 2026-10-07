@@ -16,7 +16,4 @@
 @include('frontend.includes.packages')
 <!-- Packages End -->
 
-<!-- Tour Booking Start -->
-@include('frontend.includes.booking')
-<!-- Tour Booking End -->
 @endsection

@@ -21,11 +21,11 @@
                 </button>
                 <div class="dropdown-menu dropdown-menu-end notification-menu">
                     <div class="dropdown-header fw-bold text-body">Notifications</div>
-                    <a class="dropdown-item" href="{{ route('admin.user.index') }}">
+                    <a class="dropdown-item" href="">
                         <span class="notification-title">New user registered</span>
                         <span class="notification-time">4 minutes ago</span>
                     </a>
-                    <a class="dropdown-item" href="{{ route('admin.setting.general') }}>
+                    <a class="dropdown-item" href="">
                         <span class=" notification-title">Security review completed</span>
                         <span class="notification-time">1 hour ago</span>
                     </a>
@@ -35,13 +35,13 @@
             <div class="dropdown">
                 <button class="profile-button dropdown-toggle" data-bs-toggle="dropdown" type="button" aria-expanded="false">
                     <img class="avatar-img avatar-sm"
-                        src="{{ Auth::user()->user_image ? (filter_var(Auth::user()->user_image, FILTER_VALIDATE_URL)? Auth::user()->user_image : asset('storage/' . Auth::user()->user_image)) : asset('no-user.jpg') }}"
-                        alt="{{ Auth::user()->name }}">
-                    <span class=" d-none d-sm-inline">{{ Auth::user()->name }}</span>
+                        src=""
+                        alt="">
+                    <span class=" d-none d-sm-inline"></span>
                 </button>
                 <ul class="dropdown-menu dropdown-menu-end">
-                    <li><a class="dropdown-item" href="{{ route('admin.profile.show') }}">Profile</a></li>
-                    <li><a class="dropdown-item" href="{{route('admin.setting.general')}}">Account settings</a></li>
+                    <li><a class="dropdown-item" href="">Profile</a></li>
+                    <li><a class="dropdown-item" href="">Account settings</a></li>
                     <li>
                         <hr class="dropdown-divider">
                     </li>
@@ -69,7 +69,7 @@
             </div>
             <div class="modal-body">Are you sure you want to logout?</div>
 
-            <form method="POST" action="{{ route('admin.logout') }}" class="dropdown-item modal-footer">
+            <form method="POST" action="" class="dropdown-item modal-footer">
                 @csrf
                 <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
                 <input type="submit" value="Confirm" class="btn btn-primary">

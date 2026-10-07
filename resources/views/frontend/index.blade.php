@@ -47,10 +47,6 @@
 @include('frontend.includes.packages')
 <!-- Packages End -->
 
-<!-- Tour Booking Start -->
-@include('frontend.includes.booking')
-<!-- Tour Booking End -->
-
 <!-- Testimonial Start -->
 @include('frontend.includes.testimonial')
 <!-- Testimonial End -->
