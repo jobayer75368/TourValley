@@ -37,7 +37,11 @@ Route::get('/customer_dashboard', function () {
 Route::get('/admin/dashboard', function () {
     return view('backend.dashboard');
 })->name('admin.dashboard');
+ Route::prefix('admin')->name('admin.')->group(function () {
 
+     // Dashboard 
+    Route::get('/dashboard', [UserController::class, 'dashboardIndex'])->name('dashboard');
+ })
 // / ******Backend starts here *******///
 
 // Route::prefix('admin')->middleware('auth')->name('admin.')->group(function () {

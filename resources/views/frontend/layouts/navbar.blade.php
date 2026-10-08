@@ -14,14 +14,6 @@
             <a @class(['nav-link', 'active'=> request()->routeIs(['packages'])]) href="{{ route('packages') }}" class="nav-item nav-link">Packages</a>
             <a @class(['nav-link', 'active'=> request()->routeIs(['about'])]) href="{{ route('about') }}" class="nav-item nav-link">About</a>
             <a @class(['nav-link', 'active'=> request()->routeIs(['contact'])]) href="{{route('contact')}}" class="nav-item nav-link">Contact</a>
-            <div class="nav-item dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                <div class="dropdown-menu m-0">
-                    <a @class(['nav-link', 'active'=> request()->routeIs(['booking'])]) href="{{route('booking')}}" class="dropdown-item">Travel Booking</a>
-                    <a @class(['nav-link', 'active'=> request()->routeIs(['package_details'])]) href="{{route('package_details')}}" class="dropdown-item">Package Details</a>
-                    <a href="404.html" class="dropdown-item">404 Page</a>
-                </div>
-            </div>
         </div>
         <a href="{{ route('packages') }}" class="btn btn-primary rounded-pill py-2 px-4 ms-lg-4">Book Now</a>
     </div>
